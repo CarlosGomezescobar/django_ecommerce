@@ -53,6 +53,7 @@ THIRD_PARTY_APPS = [
     "allauth.socialaccount",
     "crispy_forms",
     "whitenoise.runserver_nostatic",
+    'django.contrib.staticfiles',
     "import_export",
 
 ]
@@ -182,4 +183,5 @@ SITE_ID = 1
 # CRISPY FORMS
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 WHITENOISE_MANIFEST_STRICT = False
